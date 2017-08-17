@@ -89,6 +89,6 @@ APP_ABI :=all //打包出所有cpu平台so文件
 
 PS:这里如果你不想新建项目测试，你可以在main下新建jniLibs文件夹，把libs里的so放到jniLibs中，删除libs文件夹，然后删除jni文件夹运行也会起到类似在新项目中使用so文件的作用
 >* 对于上面说的【包名与类名以及方法名必须与生成so文件的类保持一致！】这个规范，读者可能有疑惑，这样的约束太死板不够灵活，我们在使用一些包含so库的第三方SDK的时候并不记得有这么多限制
->* 的确如此，我们看下第三方SDK是怎么搞的，以Umeng Push SDK为参考来看一下，我们发现第三方库都会带有jar包，然后通过包里面去调用so文件，而上述的规范可能更适合内部人之间开发和使用so
+>* 的确如此，我们看下第三方SDK是怎么搞的，以Umeng Push SDK为参考来看一下，我们发现第三方库都会带有jar包，然后通过包里面去调用so文件，我们只需要使用jar包中暴露的接口方法即可，而上述的规范可能更适合内部人之间开发和使用so
 
 ![Umeng Push SDK](http://upload-images.jianshu.io/upload_images/1814304-e69df73d576805c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
