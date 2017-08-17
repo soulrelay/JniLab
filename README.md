@@ -1,3 +1,4 @@
+更多精彩请关注[https://github.com/soulrelay/InterviewMemoirs/issues](https://github.com/soulrelay/InterviewMemoirs/issues)
 # 环境搭建
 ## 开发环境
 >* MacBook Pro(macOS Sierra10.12.6)
